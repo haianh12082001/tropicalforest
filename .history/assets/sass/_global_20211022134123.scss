@@ -1,0 +1,14 @@
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.product {
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+        color: #000;
+        text-align: center;
+    }
+}

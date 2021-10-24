@@ -1,0 +1,31 @@
+.footer {
+    padding-top: 60px;
+    &__container {
+    }
+    &__content {
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+    &__icon {
+        display: flex;
+        column-gap: 12px;
+        a {
+            border: 1px solid #999;
+            border-radius: 50%;
+        }
+        .fb {
+            padding: 5px 9px;
+        }
+        .tw {
+            padding: 5px 6px;
+        }
+        .google {
+            padding: 9px;
+        }
+    }
+}

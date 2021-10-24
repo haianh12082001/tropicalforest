@@ -1,0 +1,23 @@
+.feedback {
+    background-image: url(../img/feedback.png);
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    position: relative;
+    &__text {
+        padding-top: 10px;
+        text-align: center;
+    }
+    &__info {
+        img {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

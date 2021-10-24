@@ -1,0 +1,44 @@
+.feedback {
+    &__container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    &__content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    background-image: url(../img/feedback.png);
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    position: relative;
+    &__text {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #515151;
+        padding: 10px 15px 0 15px;
+    }
+    &__client {
+        text-align: center;
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        img {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+.info__name {
+    color: #515151;
+}

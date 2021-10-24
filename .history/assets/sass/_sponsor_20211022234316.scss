@@ -1,0 +1,15 @@
+.sponsor {
+    &__content {
+        width: 100%;
+        display: flex;
+    }
+    &__img {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        img {
+            width: 130px;
+            height: 87px;
+        }
+    }
+}

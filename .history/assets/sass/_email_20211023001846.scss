@@ -1,0 +1,29 @@
+.email {
+    width: 100%;
+    background: #255605;
+    padding: 40px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        column-gap: 27px;
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+    &__form {
+        input {
+            width: 515px;
+            padding: 14px;
+            background: #1d4204;
+            border: none;
+            color: #fff;
+        }
+    }
+}

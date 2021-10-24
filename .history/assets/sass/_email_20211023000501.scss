@@ -1,0 +1,13 @@
+.email {
+    width: 100%;
+    background: #255605;
+    padding: 40px 0;
+    &__text {
+        color: #fff;
+        display: flex;
+        p {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}

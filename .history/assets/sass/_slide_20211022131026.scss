@@ -1,0 +1,13 @@
+.slide {
+    &__item {
+        padding: 0 11px 0 0;
+        position: relative;
+    }
+    .slide1 {
+        position: absolute;
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+}

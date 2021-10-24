@@ -1,0 +1,63 @@
+.category {
+    padding-top: 67px;
+
+    &__list {
+        display: flex;
+        column-gap: 23px;
+        justify-content: center;
+    }
+    &__content {
+        padding-top: 40px;
+    }
+    &__img {
+        // height: 359px;
+        img {
+            object-fit: cover;
+        }
+    }
+    &__evaluation {
+        color: #c6c6c6;
+        margin-bottom: 14px;
+        i {
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
+        }
+        .active {
+            color: #ffc107;
+        }
+    }
+    &__tab {
+        row-gap: 13px;
+    }
+    &__text {
+        padding: 20px 0;
+    }
+    &__name {
+        color: #000;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        margin-bottom: 27px;
+    }
+    &__price {
+        color: #255605;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    button {
+        display: inline-block;
+        height: 44px;
+        border: none;
+        background: #255605;
+        align-items: center;
+        margin: 0 auto;
+        span {
+            padding: 14px 44px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+        }
+    }
+}

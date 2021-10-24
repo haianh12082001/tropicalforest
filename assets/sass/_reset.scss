@@ -1,0 +1,37 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    // background: #212529;
+    // background-color: #fff;
+    color: #fff;
+}
+h1,
+h2,
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    // cursor: pointer;
+    color: black;
+}
+img {
+    max-width: 100%;
+    // height: auto;
+    // display: block;
+}

@@ -1,0 +1,71 @@
+.slide {
+    &__item {
+        // padding: 0 11px 0 0;
+        position: relative;
+    }
+    .slide1 {
+        position: absolute;
+        top: 23px;
+        left: 19px;
+        padding: 0 20px;
+    }
+    .slide2 {
+        position: absolute;
+        bottom: 23px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        // display: block;
+        width: 100%;
+        padding: 0 20px;
+    }
+    &__discout {
+        font-size: 16px;
+        line-height: 18.75px;
+        font-weight: 600;
+        color: #d80000;
+        margin-bottom: 8px;
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 27px;
+    }
+    &__link {
+        color: #255605;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        text-decoration: underline;
+    }
+}
+.product__discout {
+    padding-top: 70px;
+    img {
+        object-fit: cover;
+    }
+}
+.discout__item {
+    // padding: 0;
+    position: relative;
+    .slide__text {
+        position: absolute;
+        top: 52px;
+        left: 41px;
+        @include maxWidth(576px) {
+            top: 5%;
+        }
+    }
+    .slide__name {
+        font-size: 36px;
+        line-height: 42px;
+        color: #515151;
+        font-family: "San Francisco";
+        font-weight: 600;
+        @include maxWidth(480px) {
+            font-size: 26px;
+        }
+    }
+}

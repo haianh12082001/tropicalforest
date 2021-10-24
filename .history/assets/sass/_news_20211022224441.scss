@@ -1,0 +1,26 @@
+.news {
+    padding-top: 70px;
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__content {
+        padding-top: 25px;
+    }
+    &__date {
+        color: #255605;
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        p {
+            font-size: 14px;
+            line-height: 16.41px;
+            font-weight: 500;
+        }
+    }
+    &__title {
+        color: #515151;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}

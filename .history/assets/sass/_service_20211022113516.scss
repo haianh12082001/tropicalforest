@@ -1,0 +1,17 @@
+.service {
+    &__container {
+        margin-top: 84px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        color: #515151;
+        font-size: 14px;
+    }
+    &__des {
+        color: #827e7e;
+        font-size: 11px;
+    }
+}

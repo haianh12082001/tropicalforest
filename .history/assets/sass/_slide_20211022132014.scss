@@ -1,0 +1,31 @@
+.slide {
+    &__item {
+        padding: 0 11px 0 0;
+        position: relative;
+    }
+    .slide1 {
+        position: absolute;
+        top: 23px;
+        left: 19px;
+    }
+    &__discout {
+        font-size: 16px;
+        line-height: 18.75px;
+        font-weight: 600;
+        color: #d80000;
+        margin-bottom: 8px;
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+        font-weight: 600;
+    }
+    &__link {
+        color: #255605;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        text-decoration: underline;
+    }
+}

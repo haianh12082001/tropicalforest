@@ -1,0 +1,21 @@
+.footer {
+    padding-top: 60px;
+    &__container {
+    }
+    &__content {
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+    &__icon {
+        display: flex;
+        a {
+            border: 1 px solid #999;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.sponsor {
+    padding: 80px 0;
+    &__content {
+        width: 100%;
+        // display: flex;
+        // column-gap: 20px;
+    }
+    &__img {
+        // display: flex !important;
+        // width: 20% !important;
+        // justify-content: center;
+        img {
+            width: 130px;
+            height: 87px;
+        }
+    }
+}

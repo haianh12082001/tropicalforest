@@ -1,0 +1,23 @@
+.service {
+    padding: 82px 0;
+    &__container {
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+    }
+    &__name {
+        color: #515151;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+    &__des {
+        color: #827e7e;
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 400;
+    }
+    @include maxWidth(768px);
+}

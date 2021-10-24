@@ -1,0 +1,19 @@
+.slide {
+    &__item {
+        padding: 0 11px 0 0;
+        position: relative;
+    }
+    .slide1 {
+        position: absolute;
+    }
+    &__discout {
+        font-size: 16px;
+        line-height: 18.75px;
+        font-weight: 600;
+        color: #d80000;
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 22;
+    }
+}

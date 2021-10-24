@@ -1,0 +1,16 @@
+.footer {
+    &__container {
+    }
+    &__content {
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+    &__icon {
+        display: flex;
+    }
+}

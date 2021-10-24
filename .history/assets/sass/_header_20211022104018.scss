@@ -1,0 +1,24 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__contact {
+        height: 45px;
+        &--right {
+            width: 16px;
+            height: 10.67px;
+            background: red;
+            position: relative;
+            i {
+                color: #ffda44;
+                font-size: 6px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

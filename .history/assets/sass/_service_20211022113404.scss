@@ -1,0 +1,13 @@
+.service {
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        color: #515151;
+        font-size: 14px;
+    }
+    &__des {
+        color: #827e7e;
+    }
+}

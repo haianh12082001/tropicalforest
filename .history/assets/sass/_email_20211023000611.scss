@@ -1,0 +1,16 @@
+.email {
+    width: 100%;
+    background: #255605;
+    padding: 40px 0;
+    &__text {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        column-gap: 27px;
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+}

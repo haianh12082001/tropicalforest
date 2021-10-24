@@ -1,0 +1,11 @@
+.category {
+    padding-top: 67px;
+    &__content {
+        padding-top: 50px;
+    }
+    &__list {
+        display: flex;
+        column-gap: 23px;
+        justify-content: center;
+    }
+}

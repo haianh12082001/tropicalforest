@@ -1,0 +1,45 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__contact {
+        height: 45px;
+        width: 100%;
+        background: #255605;
+        display: flex;
+        align-items: center;
+        &--right {
+            width: 16px;
+            height: 10.67px;
+            background: red;
+            position: relative;
+            i {
+                color: #ffda44;
+                font-size: 6px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &__menu {
+        height: 98px;
+    }
+    &__logo {
+        padding: 13px 0;
+        height: 72px;
+        img {
+            width: 136px;
+            height: 72px;
+        }
+    }
+    &__list {
+        display: flex;
+    }
+    &__icon {
+        color: #343434;
+    }
+}

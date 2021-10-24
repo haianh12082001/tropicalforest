@@ -1,0 +1,8 @@
+.bestSeller {
+    padding-top: 72px;
+    &__img {
+        img {
+            object-fit: cover;
+        }
+    }
+}

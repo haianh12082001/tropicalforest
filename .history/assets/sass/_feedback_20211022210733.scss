@@ -1,0 +1,32 @@
+.feedback {
+    &__container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    background-image: url(../img/feedback.png);
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    position: relative;
+    &__text {
+        padding-top: 10px;
+        text-align: center;
+    }
+    &__client {
+        text-align: center;
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        img {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

@@ -55,13 +55,6 @@
             width: 136px;
             height: 72px;
         }
-        @include maxWidth(567px) {
-            img {
-                width: 100px;
-                height: auto;
-                object-fit: cover;
-            }
-        }
     }
     &__list {
         display: flex;
@@ -82,7 +75,6 @@
             z-index: 9999;
             transition: all 0.2s;
             overflow-y: auto;
-            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
             &.active {
                 transform: translateX(0);
             }
@@ -102,9 +94,6 @@
         display: flex;
         color: #343434;
         column-gap: 25px;
-        @include maxWidth(768px) {
-            column-gap: 20px;
-        }
     }
     &__link {
         position: relative;

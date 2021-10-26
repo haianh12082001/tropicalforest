@@ -1,0 +1,50 @@
+.contact {
+    &__container {
+        padding: 24px 15px 32px 15px;
+    }
+    &__content {
+        // padding-top: 1.5rem;
+        &--company {
+            // font-family: "Fester";
+            font-family: "Roboto";
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        line-height: 37px;
+        margin-bottom: 27px;
+    }
+    .row {
+        padding: 15px 15px 0 15px;
+    }
+    .contact__form {
+        background: #255605;
+        padding: 30px;
+    }
+    .form__control {
+        background: #fff;
+        color: #000;
+    }
+}
+.form__control {
+    color: #fff;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    input {
+        height: 50px;
+    }
+}
+.btn__send {
+    width: 100%;
+    color: #000;
+    background: linear-gradient(#fdb813, #fd8313);
+    font-weight: 700;
+}

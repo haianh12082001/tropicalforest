@@ -1,0 +1,32 @@
+.contact {
+    &__container {
+        padding: 24px 15px 32px 15px;
+    }
+    &__content {
+        // padding-top: 1.5rem;
+        &--company {
+            font-family: "Fester";
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: "Fester";
+        text-transform: uppercase;
+        line-height: 37px;
+        margin-bottom: 27 px;
+    }
+    .row {
+        padding: 15px 15px 0 15px;
+    }
+    .contact__form {
+        background: #0d1d31;
+        padding: 30px;
+    }
+    .form__control {
+        background: #fff;
+        color: #000;
+    }
+}

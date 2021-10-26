@@ -1,0 +1,22 @@
+.sponsor {
+    padding: 80px 0;
+    @include maxWidth(768px) {
+        padding: 40px 0;
+    }
+    &__content {
+        // width: 100%;
+        display: flex;
+        // column-gap: 20px;
+    }
+    &__img {
+        margin: 0 55px 0 50px;
+        width: 120px;
+        height: 70px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

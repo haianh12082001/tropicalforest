@@ -1,0 +1,112 @@
+.category {
+    padding-top: 67px;
+
+    &__list {
+        display: flex;
+        column-gap: 23px;
+        justify-content: center;
+        @include maxWidth(768px) {
+            // justify-content: flex-start;
+            // flex-wrap: nowrap;
+            // overflow-x: auto;
+            // padding-left: 0;
+            // padding-right: 0;
+            display: grid;
+            justify-content: flex-start;
+            grid-auto-columns: 46%;
+            grid-auto-flow: column;
+            grid-gap: 1.5rem;
+            overflow: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            -webkit-overflow-scrolling: touch;
+            scroll-padding: 1rem;
+            grid-template-columns: unset;
+            column-gap: 10px;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0;
+        }
+        & > * {
+            scroll-snap-align: start;
+        }
+    }
+    &__content {
+        padding-top: 40px;
+    }
+    &__img {
+        // height: 359px;
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    &__evaluation {
+        color: #c6c6c6;
+        margin-bottom: 14px;
+        i {
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
+        }
+        .active {
+            color: #ffc107;
+        }
+    }
+    &__tab {
+        row-gap: 13px;
+    }
+    &__text {
+        padding: 20px 0;
+    }
+    &__name {
+        color: #000;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        margin-bottom: 27px;
+    }
+    &__price {
+        color: #255605;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__link {
+        font-weight: 600;
+    }
+    .category__item > button {
+        border: 1px solid;
+        border-radius: 8px;
+        background: transparent;
+    }
+    .category__container > button {
+        display: block;
+        height: 44px;
+        border: none;
+        background: #255605;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        span {
+            padding: 14px 44px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+        }
+    }
+}
+
+.category__content > .category__tab {
+    display: none;
+}
+.category__content > .active {
+    display: flex;
+}
+.category__link.active {
+    color: #255605;
+}

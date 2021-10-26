@@ -1,0 +1,35 @@
+.contact {
+    color: #000;
+    &__heading {
+        border-bottom: 1px solid #eaeaea;
+        line-height: 40px;
+        position: relative;
+        font-size: 24px;
+    }
+    &__form {
+        color: #333;
+        text-align: left;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    input {
+        border-radius: 0;
+        border-color: #eaeaea;
+        box-shadow: inherit;
+        outline: 0 none;
+    }
+}
+.input {
+    position: relative;
+    display: block;
+}
+.icon-prepend {
+    position: absolute;
+    top: 3px;
+    width: 29px;
+    height: 29px;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+}

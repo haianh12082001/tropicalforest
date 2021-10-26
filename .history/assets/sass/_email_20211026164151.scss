@@ -48,7 +48,6 @@
                 width: 100%;
             }
             @include maxWidth(576px) {
-                padding: 6px;
                 img {
                     width: 50px;
                 }

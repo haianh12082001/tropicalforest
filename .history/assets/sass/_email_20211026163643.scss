@@ -8,7 +8,7 @@
         flex-wrap: wrap;
         @include maxWidth(768px) {
             // display: block;
-            row-gap: 20px;
+            row-gap: 30px;
         }
     }
     &__text {
@@ -22,7 +22,7 @@
             font-weight: 700;
             line-height: 28px;
             @include maxWidth(576px) {
-                font-size: 14px;
+                font-size: 14;
             }
         }
     }
@@ -46,12 +46,6 @@
             @include maxWidth(768px) {
                 // display: block;
                 width: 100%;
-            }
-            @include maxWidth(576px) {
-                padding: 6px;
-                img {
-                    width: 50px;
-                }
             }
         }
         .submit {

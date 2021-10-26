@@ -914,7 +914,7 @@ input {
 }
 @media screen and (max-width: 768px) {
   .email__container {
-    row-gap: 30px;
+    row-gap: 20px;
   }
 }
 .email__text {
@@ -927,6 +927,11 @@ input {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+}
+@media screen and (max-width: 576px) {
+  .email__text p {
+    font-size: 14px;
+  }
 }
 .email__form {
   color: #fff;
@@ -947,6 +952,14 @@ input {
 @media screen and (max-width: 768px) {
   .email__form .text {
     width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .email__form .text {
+    padding: 6px;
+  }
+  .email__form .text img {
+    width: 50px;
   }
 }
 .email__form .submit {

@@ -172,7 +172,7 @@ input {
     bottom: 0;
     background: #fff;
     width: 300px;
-    height: 100vh;
+    height: calc(100vh - 98px);
     padding: 15px;
     text-transform: uppercase;
     z-index: 9999;
@@ -670,10 +670,10 @@ input {
   border: 1px solid;
   border-radius: 4px;
   background: transparent;
-  transition: all 3s;
+  transition: all 0.3s;
 }
 .category .category__item > button:hover {
-  background: #ff1e27;
+  background: green;
   color: #fff;
 }
 .category .category__container > button {

@@ -1,0 +1,12 @@
+.tabProduct {
+    &__list {
+        padding: 20px;
+    }
+    &__item {
+        width: 450px;
+        height: 450px;
+        img {
+            width: 100%;
+        }
+    }
+}

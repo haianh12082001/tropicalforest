@@ -318,11 +318,11 @@ var valueCount
 let add = document.querySelector(".add");
 let remove = document.querySelector(".minus");
 valueCount = document.getElementById("number").value;
-// const number = document.querySelector('#number')
-// number.addEventListener('blur', function() {
-//    valueCount = document.getElementById("number").value;
+const number = document.querySelector('#number')
+number.addEventListener('blur', function() {
+   valueCount = document.getElementById("number").value;
    
-// })
+})
 // console.log(valueCount);
 add.addEventListener('click', function(){
     valueCount = document.getElementById("number").value;

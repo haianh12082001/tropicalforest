@@ -317,13 +317,7 @@ $('.fas.fa-search').click(function(){
 var valueCount
 let add = document.querySelector(".add");
 let remove = document.querySelector(".minus");
-valueCount = document.getElementById("number").value;
-// const number = document.querySelector('#number')
-// number.addEventListener('blur', function() {
-//    valueCount = document.getElementById("number").value;
-   
-// })
-// console.log(valueCount);
+
 add.addEventListener('click', function(){
     valueCount = document.getElementById("number").value;
 
@@ -342,10 +336,14 @@ document.querySelector('.minus').setAttribute("disabled","disabled");
 
 remove.addEventListener('click', function(){
     valueCount = document.getElementById("number").value;
- 
+    if(valueCount <1){
+        document.querySelector('.minus').setAttribute("disabled","disabled")
+    }
+
     valueCount--;
-    
+
     document.getElementById("number").value = valueCount
+
     if(valueCount == 1){
         document.querySelector('.minus').setAttribute("disabled","disabled")
     }

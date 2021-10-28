@@ -1,0 +1,33 @@
+.workshop {
+    padding-top: 40px;
+    &__img {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+    }
+    .slick-dots {
+        display: flex !important;
+        column-gap: 10px;
+        li {
+            // width: 12px;
+            // height: 12px;
+            // border-radius: 50%;
+            border-color: #ffff;
+        }
+        .slick-active button {
+            background: #fff;
+        }
+        button {
+            text-indent: -9999px;
+            background: #c4c4c4;
+            width: 4px;
+            height: 11px;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+        }
+    }
+}

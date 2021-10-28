@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script language="javascript">
+            // Hàm show kết quả
+            function show_result() {
+                // Lấy hai thẻ HTML
+                var input = document.getElementById("message");
+                var div = document.getElementById("result");
+
+                // Gán nội dung ô input vào thẻ div
+                div.innerHTML = input.value;
+                console.log(input.value);
+            }
+        </script>
+        <!-- <input type="text" id="message" value="1" onkeyup="show_result()" /> -->
+        <div id="result"></div>
+        <button class="minus disabled" type="button">-</button>
+        <input type="text" aria-valuenow="1" value="1" id="number" onkeyup="show_result()" />
+        <!-- <div id="number">0</div> -->
+        <button class="add disabled" type="button">+</button>
+    </body>
+</html>

@@ -197,6 +197,7 @@ input {
   display: flex;
   color: #343434;
   column-gap: 25px;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .header__icon {
@@ -741,6 +742,7 @@ input {
 }
 .category .btn:hover::before {
   transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  width: 100%;
 }
 
 .video {
@@ -1246,6 +1248,20 @@ input {
     margin-top: 30px;
   }
 }
+.tab__news form {
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: #e5e5e5 0px 8px 16px 0px;
+}
+.tab__news form input {
+  padding: 5px 30px 5px 20px;
+}
+.tab__news form i {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
 
 hr {
   margin-top: 1rem;
@@ -1636,6 +1652,83 @@ select {
   .buying button span {
     font-size: 12px;
   }
+}
+.workshop {
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+.workshop__img {
+  width: 100%;
+}
+.workshop__img img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+.workshop__content {
+  position: relative;
+}
+.workshop__item {
+  margin-bottom: 40px;
+}
+.workshop__name {
+  color: #000;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.workshop .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  column-gap: 10px;
+}
+.workshop .slick-dots li {
+  border-color: #ffff;
+}
+.workshop .slick-dots .slick-active button {
+  background: #fff;
+}
+.workshop .slick-dots button {
+  text-indent: -9999px;
+  background: #c4c4c4;
+  width: 4px;
+  height: 11px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.workshop__text {
+  color: #000;
+  margin: 30px 0;
+  text-align: justify;
+}
+.workshop a {
+  padding: 15px 20px;
+  border: 1px solid #000;
+}
+.workshop a:hover {
+  color: #fff;
+  background: #000;
+}
+.workshop .slick-prev,
+.workshop .slick-next {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  z-index: 80;
+  background-color: rgba(244, 238, 238, 0.4);
+  transform: translateY(-50%);
+  padding: 5 px;
+  font-size: 18px;
+}
+.workshop .slick-next {
+  right: 2px;
+}
+.workshop .slick-prev {
+  left: 2px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <script language="javascript">
+            // Hàm show kết quả
+            function show_result() {
+                // Lấy hai thẻ HTML
+
+                // var div = document.getElementById("result");
+                var valueCount;
+                let add = document.querySelector(".add");
+                let remove = document.querySelector(".minus");
+                valueCount = document.getElementById("number").value;
+                // Gán nội dung ô input vào thẻ div
+
+                console.log(valueCount);
+                add.addEventListener("click", function () {
+                    valueCount = document.getElementById("number").value;
+
+                    valueCount++;
+
+                    document.getElementById("number").value = valueCount;
+                    if (valueCount > 1) {
+                        document.querySelector(".minus").removeAttribute("disabled");
+                        document.querySelector(".minus").classList.remove("disabled");
+                    }
+                });
+                document.querySelector(".minus").setAttribute("disabled", "disabled");
+                // var valueCount
+                // let add = document.querySelector(".add");
+
+                remove.addEventListener("click", function () {
+                    valueCount = document.getElementById("number").value;
+
+                    valueCount--;
+                    if (valueCount < 1) {
+                        valueCount = 1;
+                    }
+                    document.getElementById("number").value = valueCount;
+                    if (valueCount == 1) {
+                        document.querySelector(".minus").setAttribute("disabled", "disabled");
+                    }
+                });
+            }
+        </script>
+        <!-- <input type="text" id="message" value="1" onkeyup="show_result()" /> -->
+        <div id="result"></div>
+        <button class="minus disabled" type="button">-</button>
+        <input type="text" aria-valuenow="1" value="1" id="number" onkeyup="show_result()" />
+        <!-- <div id="number">0</div> -->
+        <button class="add disabled" type="button">+</button>
+    </body>
+</html>

@@ -325,10 +325,8 @@ add.addEventListener('click', function(){
 
     document.getElementById("number").value = valueCount
     if(valueCount > 1){
-        document.querySelector('.minus').removeAttribute("disabled")
-        document.querySelector('.minus').classList.remove("disabled")
+        document.querySelector('.minus').setAttribute("disabled","disabled")
     }
-
 })
 document.querySelector('.minus').setAttribute("disabled","disabled");
 // var valueCount

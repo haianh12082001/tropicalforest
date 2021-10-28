@@ -313,10 +313,9 @@ $('.fas.fa-search').click(function(){
         
 //     }
 // })
-// document.querySelector('.add').setAttribute("disabled","disabled");
+document.querySelector('.add').setAttribute("disabled","disabled");
 var valueCount
 let add = document.querySelector(".add");
-let remove = document.querySelector(".minus");
 
 add.addEventListener('click', function(){
     valueCount = document.getElementById("number").value;
@@ -324,24 +323,15 @@ add.addEventListener('click', function(){
     valueCount++;
 
     document.getElementById("number").value = valueCount
-    if(valueCount > 1){
-        document.querySelector('.minus').removeAttribute("disabled")
-        document.querySelector('.minus').classList.remove("disabled")
-    }
-
 })
-document.querySelector('.minus').setAttribute("disabled","disabled");
-// var valueCount
-// let add = document.querySelector(".add");
+document.querySelector('.add').setAttribute("disabled","disabled");
+var valueCount
+let add = document.querySelector(".add");
 
-remove.addEventListener('click', function(){
+add.addEventListener('click', function(){
     valueCount = document.getElementById("number").value;
 
-    valueCount--;
+    valueCount++;
 
     document.getElementById("number").value = valueCount
-
-    if(valueCount == 1){
-        document.querySelector('.minus').setAttribute("disabled","disabled")
-    }
 })

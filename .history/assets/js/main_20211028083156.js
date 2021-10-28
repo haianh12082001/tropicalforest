@@ -290,58 +290,26 @@ $('.fas.fa-search').click(function(){
 })
 
 // Số lượng sẩn phẩm
-// let add = document.getElementById('add');
-// let remove = document.getElementById('minus')
+let add = document.getElementById('add');
+let remove = document.getElementById('minus');
 
-// let int = document.getElementById('number')
-// let integer = 0;
+let int = document.getElementById('number');
+let integer = 0;
 // int.value = integer;
+// integer=int.value;
 
-// console.log(int.value);
+console.log(integer);
 
-// add.addEventListener('click',function(){
-//     integer += 1;
-//     int.value = integer;
-// })
-
-// remove.addEventListener('click',function(){
-//     integer -= 1;
-//     int.value = integer;
-
-//     if(integer <1){
-//         integer = 1;
-        
-//     }
-// })
-// document.querySelector('.add').setAttribute("disabled","disabled");
-var valueCount
-let add = document.querySelector(".add");
-let remove = document.querySelector(".minus");
-
-add.addEventListener('click', function(){
-    valueCount = document.getElementById("number").value;
-
-    valueCount++;
-
-    document.getElementById("number").value = valueCount
-    if(valueCount > 1){
-        document.querySelector('.minus').removeAttribute("disabled")
-        document.querySelector('.minus').classList.remove("disabled")
-    }
-
+add.addEventListener('click',function(){
+    integer += 1;
+    int.value = integer;
 })
-document.querySelector('.minus').setAttribute("disabled","disabled");
-// var valueCount
-// let add = document.querySelector(".add");
 
-remove.addEventListener('click', function(){
-    valueCount = document.getElementById("number").value;
+remove.addEventListener('click',function(){
+    integer -= 1;
+    int.value = integer;
 
-    valueCount--;
-
-    document.getElementById("number").value = valueCount
-
-    if(valueCount == 1){
-        document.querySelector('.minus').setAttribute("disabled","disabled")
+    if(integer <2){
+        integer = 1;
     }
 })
